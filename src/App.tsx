@@ -1,8 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Layout from "./components/layout";
 
-const router = createBrowserRouter([]);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+  },
+]);
 
 const GlobalStyles = createGlobalStyle`
   ${reset};

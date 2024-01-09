@@ -1,5 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+const router = createBrowserRouter([]);
 
 const GlobalStyles = createGlobalStyle`
   ${reset};
@@ -17,6 +20,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
+      <RouterProvider router={router} />
     </>
   );
 }

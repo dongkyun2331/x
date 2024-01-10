@@ -7,6 +7,14 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const Text = styled.span`
+  font-size: 24px;
+`;
+
 export default function LoadingScreen() {
-  return <Wrapper></Wrapper>;
+  return (
+    <Wrapper>
+      <Text>Loading...</Text>
+    </Wrapper>
+  );
 }

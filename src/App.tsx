@@ -5,6 +5,7 @@ import Layout from "./components/layout";
 import Home from "./routes/home";
 import Profile from "./routes/profile";
 import Login from "./routes/login";
+import CreateAccount from "./routes/create-account";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/create-account",
+    element: <CreateAccount />,
   },
 ]);
 
